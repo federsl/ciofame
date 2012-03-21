@@ -1,0 +1,12 @@
+Struttura delle cartelle
+========================
+
+Il progetto contiene le seguenti cartelle:
+
+* images: in cui verranno salvate tutte le immagini
+* js: in cui vengono salvati i file javascript
+* css: in cui salvare i fogli di stile
+* includes: in cui salvare tutti i file di supporto (come model.php e i file di contenuti html)
+
+Nella cartella principale ci saranno invece un file config.php (con i parametri di connessione
+al db), il file index.php (il controller dell'applicazione) e tutti i file delle azioni.
