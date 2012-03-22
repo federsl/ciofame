@@ -1,4 +1,4 @@
-<?php include ('includes/funzioni_db.php') ?>
+<?php include ('includes/funzioni_fede.php') ?>
 <!DOCTYPE html>
 <html>
     <head>

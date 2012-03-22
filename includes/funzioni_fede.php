@@ -1,19 +1,26 @@
 <?php 
+	
 
-include 'funzioni_db.php';
+	include 'funzioni_db.php';
 
-function getCategoria ($categoria){
+	function getCategorie (){
 		$query="SELECT * FROM categoria";
 		$risultato= mysql_query($query) or die ('Query Fallita: '.$query);
-		$categoria= mysql_fetch_array ($risultato, MYSQL_ASSOC);
-		return $categoria;
+		$categorie = array();
+		while ($riga = mysql_fetch_array ($risultato, MYSQL_ASSOC)) {
+			$categorie[] = $riga;
+		}
+		return $categorie;
 	}
 			
-	function getCiboFromCategoria ($cibo_cat){
-		$query= "SELECT cibo FROM categoria where id=$id";
+	function getCibiFromCategoria ($categoria_cibi){
+		$query= "SELECT * FROM cibo where categoria_id=$categoria_cibi";
 		$risultato= mysql_query($query) or die('Query fallita  :'.$query);
-		$$cibo_cat)= mysql_fetch_array ($risultato, MYSQL_ASSOC); 
-		return $cibo_cat);
+		$categoria_cibi = array();
+		while ($riga = mysql_fetch_array ($risultato, MYSQL_ASSOC)) {
+			$categoria_cibi[] = $riga;
+		}
+		return $categoria_cibi;
 	}
 	
 	function getCibi($cibi){
@@ -22,7 +29,9 @@ function getCategoria ($categoria){
 		$cibi= mysql_fetch_array ($risultato, MYSQL_ASSOC); 
 		return $cibi;
 		
-	}function modificaCibo ($cibo){
+	}
+	
+	function modificaCibo ($cibo){
 		$query= "Update cibo SET where descrizione=$descrizione,$costo WHERE id=$id";
 		mysql_query($query) or die ('Query fallita :'.$query);
 		echo ($query);

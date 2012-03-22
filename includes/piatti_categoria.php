@@ -1,8 +1,0 @@
-<?php 
-	 
-	getCiboFromId ($id)	
-    $cibo= 
-				
-?>
-
-	
