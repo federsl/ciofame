@@ -3,7 +3,7 @@
 <html>
     <head>
         <title>HAL Restaurant</title>
-		<link rel="stylesheet" type="text/css" href="stile.css"
+		<link rel="stylesheet" type="text/css" href="css/stile.css">
     </head>
     <body>
 		<?php		if (! isset($_GET['action']) || $_GET['action'] == 'benvenuto'): ?>

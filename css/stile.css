@@ -1,0 +1,42 @@
+#scelta{
+width: 900px;  
+height: 563px;
+background: 
+url(../images/content.gif)no-repeat;
+margin: 0 auto; 
+border: 1px solid #000000;
+text-align: left; 
+}
+
+a{
+color: #3A040D;
+text-decoration: none;
+}
+
+a:hover{
+color: #FF6600 ;
+}
+
+#lista{
+float: left; 
+width: 165px; 
+padding: 5px 5px 5px 5px; 
+font-size:14px; 
+}
+
+#piatti { 
+position: absolute; left:400px; top: 20px; right:550px;
+margin: 0 px; 
+padding: 0px; 
+width:304 px;
+height:563 px;
+}
+
+#h2{
+color: #3A040D;
+}
+
+.piatto_img{
+height: 90px;
+width: 152px;
+}
