@@ -40,3 +40,21 @@ color: #3A040D;
 height: 90px;
 width: 152px;
 }
+
+.piatto_img2{
+height: 200px;
+width: 310px;
+}
+
+
+#dettaglio{
+position:absolute; left: 757px; top: 20px; right:210px;
+height:750 px;
+width: 100 px;
+border: 1px solid #000000;
+
+}
+
+
+
+

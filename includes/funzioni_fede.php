@@ -37,6 +37,15 @@
 		echo ($query);
 	}
 	
+	function getCiboFromId($id) { 
+	$query = "SELECT * FROM cibo WHERE id=$id"; 
+    $risultato = mysql_query($query) or die('Richiesta fallita' . $query);   
+	$cibo = mysql_fetch_array($risultato, MYSQL_ASSOC); 
+    return $cibo; 
+	} 
+	
+	
+	
 	
 
 ?>

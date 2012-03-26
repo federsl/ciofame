@@ -1,4 +1,4 @@
-<?php $categoria_cibi= getCibiFromCategoria($_GET['id_categoria']); ?>
+<?php $categoria_cibi= getCibiFromCategoria($id_categoria); ?>
 	
 <?php foreach($categoria_cibi as $cibo): ?>
 	<a href="index.php?action=scelta_piatto&id_cibo=<?php echo $cibo['id'] ?>">
