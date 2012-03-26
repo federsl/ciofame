@@ -12,15 +12,15 @@
 			<legend>Quantità</legend>
 			<select name="Quantità" >
 				<option value="ordina.php" selected="selected">1  </option>
-				<option value="ordina.php">2  </option>
-				<option value="ordina.php">3  </option>
-				<option value="ordina.php">4  </option>
-				<option value="ordina.php">5  </option>
-				<option value="ordina.php">6 </option>
+				<option value="ordina.php">2</option>
+				<option value="ordina.php">3</option>
+				<option value="ordina.php">4</option>
+				<option value="ordina.php">5</option>
+				<option value="ordina.php">6</option>
 				<option value="ordina.php">7</option>
-				<option value="ordina.php">8  </option>
-				<option value="ordina.php">9  </option>
-				<option value="ordina.php">10  </option>
+				<option value="ordina.php">8</option>
+				<option value="ordina.php">9</option>
+				<option value="ordina.php">10</option>
 			</select>	
 			<input type="submit" value="Aggiungi all'ordine" class="input" />
 		</fieldset>
