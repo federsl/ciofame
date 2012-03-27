@@ -22,7 +22,13 @@
 				<option value="ordina.php">9</option>
 				<option value="ordina.php">10</option>
 			</select>	
-			<input type="submit" value="Aggiungi all'ordine" class="input" />
+			<input type="submit" value="Aggiungi all'ordine"/>
 		</fieldset>
 	</form> 
+ </div> 
+ <div id="ordine_tav">
+	 <form action="ordine_tavolo.php">
+	   <input type="submit" value="IL TUO ORDINE"/>
+	 </form> 
  </div>
+

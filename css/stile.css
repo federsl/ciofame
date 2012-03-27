@@ -43,7 +43,36 @@ height:750 px;
 width: 100 px;
 border: 1px solid #000000;
 }
-
-
+#ordine_tav{
+position: absolute; left: 550px; bottom: 90px;
+}
+#tuo_ordine{
+width: 900px;  
+height: 563px;
+border: 1px solid #000000;
+position: absolute; left: 300px; top: 20px; right: 300px;
+}
+.img_tav{
+position: absolute;
+}
+#titolo{
+width: 100px;
+height: 80px;
+position: absolute; left: 480px; top:20px;
+text-align: center;
+}
+#invia{
+position: absolute; bottom: 90px; left: 300 px;
+}
+.robot_img{
+width: 200px;
+height: 200px;
+}
+#robot{
+position: absolute; top: 20px; right: 800px;
+}
+#chiudo{
+position: absolute; bottom: 90px; left: 550px;
+}
 
 
