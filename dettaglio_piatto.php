@@ -26,8 +26,8 @@
 		</fieldset>
 	</form> 
  </div> 
- <div id="comanda_tav">
-	 <form action="comanda_tavolo.php">
+ <div id="ordine_tav">
+	 <form action="ordine_tavolo.php">
 	   <input type="submit" value="IL TUO ORDINE"/>
 	 </form> 
  </div>
