@@ -4,6 +4,8 @@
     <head>
         <title>HAL Restaurant</title>
 		<link rel="stylesheet" type="text/css" href="css/stile.css">
+		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+		
     </head>
     <body>
 		<?php		if (! isset($_GET['action']) || $_GET['action'] == 'benvenuto'): ?>
