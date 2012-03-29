@@ -95,6 +95,11 @@ height: 450px;
 position: absolute; top: 10px; left: 250px;
 border: 1px solid;
 }
-
+#cibi_scelti{
+position:absolute; top: 150px; left: 475px;
+width: 350px;
+height: 350px;
+text-align: center;
+}
 
 
