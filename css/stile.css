@@ -80,7 +80,11 @@ position: absolute; bottom: 250px; left: 870px;
 position: absolute; bottom: 60px; left: 230px;
 }
 #comanda_tav{
-position: absolute; bottom: 90px; left: 570px;
+position: absolute; bottom: 55px; left: 570px;
+}
+.ordina{
+width: 70px;
+height: 70px;
 }
 .comanda{
 position:absolute; top: 80px; left: 350px;

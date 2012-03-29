@@ -1,3 +1,5 @@
+<?php session_start() ?>
+<?php $_SESSION['ordine'] = array()?>
 <?php include ('includes/funzioni_fede.php') ?>
 <!DOCTYPE html>
 <html>
