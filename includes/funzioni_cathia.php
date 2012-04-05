@@ -1,7 +1,5 @@
 <?php 
-	$link = mysql_connect('localhost', 'root') or die('Could not connect: ' . mysql_error());
-	mysql_select_db('ristorante') or die('Could not select database');	
-
+	include 'funzioni_db.php';
 	function getCiboFromId($id) { 
 		$query = "SELECT * FROM cibo WHERE id=$id"; 
 		$risultato = mysql_query($query) or die('Richiesta fallita' . $query);   
