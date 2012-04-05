@@ -4,34 +4,80 @@
 	mysql_select_db('ristorante') or die('Could not select database');	
 
 	function getOrdineaperto (){
-		$query= "SELECT * FROM Ordine where stato= 0";
+		$query= "SELECT * FROM ordine where stato= 0";
 		$risultato= mysql_query($query) or die ('Query Fallita: '.$query);
-		$ordine= mysql_fetch_array ($risultato, MYSQL_ASSOC);
+		
+		$risposta = array();
 					
-		while  (mysql_fetch_array ($risultato, MYSQL_ASSOC))			
+		while  ($ordine= mysql_fetch_array ($risultato, MYSQL_ASSOC))	
 		{
-			echo getOrdineaperto;
+			$risposta[] = $ordine;
 		}
-		return $ordine;							
-	}
-
-	function getCibidapreparareinordine (){
-		$query= "SELECT ordine_has_cibo FROM Ordine where stato=1";
-		$risultato= mysql_query($query) or die('Query fallita  :'.$query);
-		$ordine= mysql_fetch_array ($risultato, MYSQL_ASSOC); 
-		return $ordine;
-	}
-				
-	function getCibiinpreparazioneinordine(){
-		$query= "SELECT ordine_has_cibo FROM Ordine where stato=1";
-		$risultato= mysql_query($query) or die('Query fallita  :'.$query);
-		$cibi= mysql_fetch_array ($risultato, MYSQL_ASSOC); 
-		return $cibi;
+		return $risposta;							
 	}
 	
-	function getCibidaservireinordine (){
-		$query= "SELECT ordine_has_cibo FROM Ordine where stato=2";
-		mysql_query($query) or die ('Query fallita :'.$query);
-		return ($query);
+	
+	
+	function getCiboFromId($id) { 
+		$query = "SELECT * FROM cibo WHERE id=$id"; 
+		$risultato = mysql_query($query) or die('Richiesta fallita' . $query);   
+		$cibo = mysql_fetch_array($risultato, MYSQL_ASSOC); 
+		
+		return $cibo; 
+	} 
+
+	
+
+	function get_ordine_ordinato (){
+		$query="SELECT ordine FROM ordine where stato=0";
+		$risultato= mysql_query ($query) or ('Query Fallita: '.$query);
+		
+		$risposta = array ();
+		
+		while ($ordine= mysql_fatch_array ($risultato, MYSQL_ASSOC));
+		{
+		
+			$risposta[]= $ordine;
+					
+		}
+		return $risposta;
 	}
+	
+	
+	
+	
+	function get_ordine_in_preparazione (){
+		$query= "SELECT  ordine FROM ordine_has_cibo where stato=1";
+		$risultato= mysql_query ($query) or ('Query Fallita: '.$query);
+		
+		$risposta = array ();
+		
+		while ($ordine= mysql_fatch_array ($risultato, MYSQL_ASSOC));
+		{
+		
+			$risposta[]= $ordine;
+					
+		}
+		return $risposta;
+		
+		
+	}
+		
+	
+	
+	function get_ordine_pronto (){
+		$query= "SELECT  ordine FROM ordine_has_cibo where stato=2";
+		$risultato= mysql_query ($query) or ('Query Fallita: '.$query);
+		
+		$risposta = array ();
+		
+		while ($ordine= mysql_fatch_array ($risultato, MYSQL_ASSOC));
+		{
+		
+			$risposta[]= $ordine;
+					
+		}
+		return $risposta;
+		}
+		
 ?>
