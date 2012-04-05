@@ -1,3 +1,4 @@
+<?php session_start() ?>
 <?php include ('includes/funzioni_fede.php') ?>
 <!DOCTYPE html>
 <html>

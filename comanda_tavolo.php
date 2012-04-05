@@ -8,12 +8,21 @@
 	</div>
 	<div id="comanda">
 		<img class="comanda" src="images/notes.gif">
+			<div id="cibi_scelti">
+				<ul>
+					<?php foreach ($_SESSION['ordine'] as $id => $quantita): ?>
+					  <?php $cibotemp = getCiboFromId($id); ?>
+					  <li><?php echo $cibotemp['descrizione'].': '.$quantita ?></li>
+					<?php endforeach; ?>
+				</ul>
+			</div>
 	</div>
 	<div id="indietro">
-			<a href="index.php?action=scelta_piatto"><img src="images/indietro.gif" alt="torna indietro" title="torna indietro" width="118" 
+			<?php $cibo = getCiboFromId($_GET['id_cibo']);?>
+			<a href="index.php?action=scelta_piatto&id_cibo=<?php echo $cibo['id'] ?>"><img src="images/indietro.gif" alt="torna indietro" title="torna indietro" width="118" 
 			height="38"></a>
 		</div>
 	<div id="chiudo">
-		<a href="index.php?action=scelta_categoria"><img class="invia" src="images/invia.gif" alt="invia il tuo ordine" title="invia il tuo ordina "/></a>
+		<a href="index.php?action=ordine"><img class="invia" src="images/invia.gif" alt="invia il tuo ordine" title="invia il tuo ordina "/></a>
 	</div>
 </div>

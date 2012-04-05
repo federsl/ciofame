@@ -80,7 +80,11 @@ position: absolute; bottom: 250px; left: 870px;
 position: absolute; bottom: 60px; left: 230px;
 }
 #comanda_tav{
-position: absolute; bottom: 90px; left: 570px;
+position: absolute; bottom: 55px; left: 570px;
+}
+.ordina_comanda{
+width: 70px;
+height: 70px;
 }
 .comanda{
 position:absolute; top: 80px; left: 350px;
@@ -91,6 +95,21 @@ height: 450px;
 position: absolute; top: 10px; left: 250px;
 border: 1px solid;
 }
-
+#cibi_scelti{
+position:absolute; top: 150px; left: 475px;
+width: 350px;
+height: 350px;
+text-align: center;
+}
+.ordina{
+position: absolute; top: 325px; right: 50px;
+width: 70px;
+height: 70px;
+}
+.aggiunto{
+font-size: 20px;
+color: #3A040D;
+font-family: Times New Roman",Georgia,Serif;
+}
 
 
