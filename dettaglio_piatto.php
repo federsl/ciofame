@@ -12,19 +12,19 @@
 			<select name="Quantità" >
 				<option value="ordina.php">1</option>
 			</select>		
-			<a href="index.php?action=scelta_piatto&method=add&id_cibo=<?php echo $cibo['id'] ?>"><img class="ordina" src="images/invia.gif" alt="vai al tuo ordine" title="il tuo ordine "/></a>
+			<a href="index.php?action=scelta_piatto&method=add&id_cibo=<?php echo $cibo['id'] ?>"><img class="ordina" src="images/ordina.gif" alt="invia al tuo ordine" title="il tuo ordine "/></a>
 			<?php 
 				if (isset($_GET['method']))
 				{
 					if (! isset($_SESSION['ordine'])) $_SESSION['ordine'] = array();
 					if (! isset($_SESSION['ordine'][$_GET['id_cibo']])) $_SESSION['ordine'][$_GET['id_cibo']] = 1;
 					else $_SESSION['ordine'][$_GET['id_cibo']] += 1;
-					echo "<h3>Aggiunto</h3>";
+					echo "<h3 class='aggiunto'>Aggiunto</h3>";
 				}
 			?>
 		</fieldset>
 	</form> 
 </div> 
 <div id="comanda_tav">
-	<a href="index.php?action=comanda_tavolo&id_cibo=<?php echo $cibo['id'] ?>"><img class="ordina" src="images/comanda.gif" alt="vai al tuo ordine" title="il tuo ordine "/></a>
+	<a href="index.php?action=comanda_tavolo&id_cibo=<?php echo $cibo['id'] ?>"><img class="ordina_comanda" src="images/comanda.gif" alt="vai al tuo ordine" title="il tuo ordine "/></a>
 </div>
