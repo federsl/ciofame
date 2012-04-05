@@ -7,8 +7,8 @@
 		return $cibo; 
 	} 
 	function getOrdiniAperti (){
-		$query= "SELECT * FROM one where stato= 0";
-		$risultato= mysql_query($queryrdi) or die ('Query Fallita: '.$query);
+		$query= "SELECT * FROM ordine where stato= 0";
+		$risultato= mysql_query($query) or die ('Query Fallita: '.$query);
 		$risposta = array();
 		while  ($ordine= mysql_fetch_array ($risultato, MYSQL_ASSOC))	
 		{
@@ -20,7 +20,7 @@
 		$query= "SELECT  cibo_id FROM ordine_has_cibo where stato=1";
 		$risultato= mysql_query ($query) or ('Query Fallita: '.$query);
 		$risposta = array ();
-		while ($ordine= mysql_fatch_array ($risultato, MYSQL_ASSOC))
+		while ($ordine= mysql_fetch_array ($risultato, MYSQL_ASSOC))
 		{
 			$risposta[]= $ordine;		
 		}
@@ -30,7 +30,7 @@
 		$query= "SELECT  cibo_id FROM ordine_has_cibo where stato=2";
 		$risultato= mysql_query ($query) or ('Query Fallita: '.$query);
 		$risposta = array ();
-		while ($ordine= mysql_fatch_array ($risultato, MYSQL_ASSOC))
+		while ($ordine= mysql_fetch_array ($risultato, MYSQL_ASSOC))
 		{	
 			$risposta[]= $ordine;
 		}
