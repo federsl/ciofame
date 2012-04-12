@@ -1,11 +1,14 @@
 <html>
-	<head>Cucina</head>
+	<head></head>
 		<title>Ordini Cucina</title>
 		
 			<link rel="stylesheet" type="text/css" href="css/backend.css">
 				
 		<body>
 		
+				<div id= "img_cucina" align="center"><img src="images/head1.jpg" alt="Cucina"></div>
+				<div id="div_script"></div>
+						
 					<?php 
 						include_once 'includes/funzioni_cathia.php';
 						
@@ -16,9 +19,7 @@
 						////includere ordini_in_cucina
 					?> 
 					
-		
-
-
+				
 			<table width="865" align="center" height="154" border="1" cellpadding="2">
 				<tr>
 					<td width="259" align="center"><strong id="ordine">In Attesa</strong></td>
