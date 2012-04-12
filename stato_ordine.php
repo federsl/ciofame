@@ -5,39 +5,39 @@
 	$cibi_pronti= getCibiPronti($ordine_inserito);
 	$cibi_in_attesa= getCibiInAttesa ($ordine_inserito);
 ?>
+<div id="stato_ordine">
+		<div><img id="colonna1"src="images/piattiattesa.gif"></div>
+		<div><img id="colonna2"src="images/piattipreparazione.gif"></div>
+		<div><img id="colonna3"src="images/piattipronti.gif"></div>
 <table>
 	<tr>
-		<th>Cibi in attesa</th>
-		<th>Cibi in preparazione</th>
-		<th>Cibi in pronti</th>
-	</tr>
-	<tr>
 		<td>
 			<ul>
-			<?php foreach ($cibi_in_attesa as $cibo):
+				<?php foreach ($cibi_in_attesa as $cibo):
 					$cibo=getCiboFromId($cibo['cibo_id']);
-			?>
-				<li><?php echo $cibo['descrizione']; ?></li>
-			<?php endforeach; ?>
+				?>
+				<li><?php echo strtolower ($cibo['descrizione']); ?></li>
+				<?php endforeach; ?>
 			</ul>
+		</td>		
+		<td>
+			<ul>
+				<?php foreach ($cibi_in_preparazione as $cibo):
+						$cibo=getCiboFromId($cibo['cibo_id']);
+				?>
+					<li><?php echo strtolower ($cibo['descrizione']); ?></li>
+				<?php endforeach; ?>
+				</ul>
 		</td>
 		<td>
 			<ul>
-			<?php foreach ($cibi_in_preparazione as $cibo):
-					$cibo=getCiboFromId($cibo['cibo_id']);
-			?>
-				<li><?php echo $cibo['descrizione']; ?></li>
-			<?php endforeach; ?>
-			</ul>
-		</td>
-		<td>
-			<ul>
-			<?php foreach ($cibi_pronti as $cibo):
-					$cibo=getCiboFromId($cibo['cibo_id']);
-			?>
-				<li><?php echo $cibo['descrizione']; ?></li>
-			<?php endforeach; ?>
+				<?php foreach ($cibi_pronti as $cibo):
+						$cibo=getCiboFromId($cibo['cibo_id']);
+				?>
+					<li><?php echo strtolower ($cibo['descrizione']); ?></li>
+				<?php endforeach; ?>
 			</ul>
 		</td>
 	</tr>
+	<img class="pentole"src="images/pentole.gif">
 </table>

@@ -79,7 +79,7 @@ position: absolute;
 #titolo{
 width: 100px;
 height: 80px;
-position: absolute; left: 500px; top: 5px;
+position: absolute; left: 500px; top: 10px;
 text-align: center;
 }
 .robot_img{
@@ -90,14 +90,14 @@ height: 200px;
 position: absolute; top: 20px; right: 800px;
 }
 #chiudo{
-position: absolute; bottom: 250px; left: 870px;
+position: absolute; bottom: 330px; left: 870px;
 }
 .invia{
  width: 138px;
  height: 58px;
 }
 #indietro{
-position: absolute; bottom: 50px; left: 230px;
+position: absolute; bottom: 35px; left: 180px;
 }
 #comanda_tav{
 position: absolute; bottom: -8px; left: 570px;
@@ -107,9 +107,9 @@ width: 70px;
 height: 70px;
 }
 .comanda{
-position:absolute; top: 80px; left: 350px;
-width: 600px;
-height: 450px;
+position:absolute; top: 100px; left: 340px;
+width: 620px;
+height: 500px;
 }
 .index{
 position: absolute; top: 10px; left: 250px;
@@ -133,6 +133,39 @@ font-size: 20px;
 font-size: 26px;
 color: #3A040D;
 font-family: "Fruitopia";
+}
+#stato_ordine{
+width: 900px;  
+height: 600px;
+background: url(../images/content.gif)no-repeat;
+margin: 0 auto;
+font-size: 22px;
+font-family: "Fruitopia";
+}
+#colonna1{
+width:350px;
+height: 80px;
+position: absolute; top: 20px; left: 150px;
+font-size: 25px;
+}
+#colonna2{
+width:350px;
+height: 80px;
+position: absolute; top: 100px; left: 450px;
+}
+#colonna3{
+width:350px;
+height: 80px;
+position: absolute; top: 20px; right: 110px;
+}
+table{
+position: absolute; top: 180px;
+}
+li{
+text-align: left;
+}
+.pentole{
+position: absolute; top: 20px; right: 540px;
 }
 
 
