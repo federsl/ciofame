@@ -1,24 +1,32 @@
-#contenitoregrande{
-position: center;
-width:865px;
-height:154px;
-border:1px solid #000000;
-}
-#attesa {
-float: left;
-width:259px;
+#img_cucina{
+position:center;
+width:860px;
 height:200px;
-border:1px solid #000000;
 }
 
-#preparazione{
-float: left;
+#principale{
+width:865px; 
+text-align:center;
+height:154px;
+border:1px; 
+}
+
+#in_attesa{
 width:259px;
-height:200px;
-border:1px solid #000000;
+text-align:center;
+}
+
+#in_preparazione{
+width:259px;
+text-align:center;
 }
 
 #pronto{
+width:259px;
+text-align:center;
+}
+
+#preparazione{
 float: left;
 width:259px;
 height:200px;
@@ -34,11 +42,6 @@ position: center;
 
 }
 
-#img_cucina{
-position:center;
-width:859px;
-height:200px;
-}
 
 
 

@@ -20,7 +20,7 @@
 					?> 
 					
 				
-			<table width="865" align="center" height="154" border="1" cellpadding="2">
+			<table id="principale" width="865" align="center" height="154" border="1" cellpadding="2">
 				<tr>
 					<td width="259" align="center"><strong id="ordine">In Attesa</strong></td>
 					<td width="259" align="center"><strong id="ordine">In Preparazione</strong></td>
