@@ -1,0 +1,47 @@
+#contenitoregrande{
+position: center;
+width:865px;
+height:154px;
+border:1px solid #000000;
+}
+#attesa {
+float: left;
+width:259px;
+height:200px;
+border:1px solid #000000;
+}
+
+#preparazione{
+float: left;
+width:259px;
+height:200px;
+border:1px solid #000000;
+}
+
+#pronto{
+float: left;
+width:259px;
+height:200px;
+border:1px solid #000000;
+}
+
+.fotopronto{
+border: 0px;
+text-align: center;
+width:250px;
+height:150px;
+position: center;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
