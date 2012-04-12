@@ -1,23 +1,32 @@
 #scelta{
 width: 900px;  
-height: 563px;
+height: 613px;
 background: url(../images/content.gif)no-repeat;
 margin: 0 auto; 
 border: 1px solid #000000;
 text-align: left; 
+font-family: "Fruitopia";
+font-size:20px;
+}
+.categorie{
+}
+@font-face {
+font-family: "Fruitopia";
+font: url(fonts/fruitopia.ttf) format("truetype");
 }
 a{
-color: #3A040D;
+color: #ffffff;
 text-decoration: none;
 }
 a:hover{
-color: #FF6600 ;
+color: 
 }
 #lista{
 float: left; 
-width: 165px; 
+width: 175px; 
 padding: 5px 5px 5px 5px; 
-font-size:14px; 
+font-size:22px; 
+text-align: center;
 }
 #piatti { 
 position: absolute; left:400px; top: 20px; right:550px;
@@ -26,17 +35,28 @@ padding: 0px;
 width:304 px;
 height:563 px;
 }
-#h2{
+h2{
 color: #3A040D;
+background: url(../images/button_up1.gif)no-repeat;width:200px; height: 40px;
+padding-top: 5px;
+}
+h2:active{
+background: url(../images/button_down1.gif)no-repeat;
+}
+h2.attuale{
+background: url(../images/button_down1.gif)no-repeat;
 }
 .piatto_img{
 height: 90px;
 width: 152px;
+padding: 0px;
 }
 .piatto_img2{
 height: 200px;
-width: 310px;
+width: 294px;
 }
+li{
+font-size: 22px;}
 #dettaglio{
 position:absolute; left: 757px; top: 20px; right:210px;
 height:750 px;
@@ -77,10 +97,10 @@ position: absolute; bottom: 250px; left: 870px;
  height: 58px;
 }
 #indietro{
-position: absolute; bottom: 60px; left: 230px;
+position: absolute; bottom: 50px; left: 230px;
 }
 #comanda_tav{
-position: absolute; bottom: 55px; left: 570px;
+position: absolute; bottom: -8px; left: 570px;
 }
 .ordina_comanda{
 width: 70px;
@@ -102,14 +122,17 @@ height: 350px;
 text-align: center;
 }
 .ordina{
-position: absolute; top: 325px; right: 50px;
-width: 70px;
-height: 70px;
+position: absolute; top: 300px; right: 35px;
+}
+h5{
+margin: 0px 0px 5px 30px;
+text-align:left;
+font-size: 20px;
 }
 .aggiunto{
-font-size: 20px;
+font-size: 26px;
 color: #3A040D;
-font-family: Times New Roman",Georgia,Serif;
+font-family: "Fruitopia";
 }
 
 

@@ -12,15 +12,15 @@
 				<ul>
 					<?php foreach ($_SESSION['ordine'] as $id => $quantita): ?>
 					  <?php $cibotemp = getCiboFromId($id); ?>
-					  <li><?php echo $cibotemp['descrizione'].': '.$quantita ?></li>
+					  <li><?php echo strtolower ($cibotemp['descrizione'].': '.$quantita) ?></li>
 					<?php endforeach; ?>
 				</ul>
 			</div>
 	</div>
 	<div id="indietro">
 			<?php $cibo = getCiboFromId($_GET['id_cibo']);?>
-			<a href="index.php?action=scelta_piatto&id_cibo=<?php echo $cibo['id'] ?>"><img src="images/indietro.gif" alt="torna indietro" title="torna indietro" width="118" 
-			height="38"></a>
+			<a href="index.php?action=scelta_piatto&id_cibo=<?php echo $cibo['id'] ?>"><img src="images/indietro.gif" alt="torna indietro" title="torna indietro" width="157" 
+			height="51"></a>
 		</div>
 	<div id="chiudo">
 		<a href="index.php?action=ordine"><img class="invia" src="images/invia.gif" alt="invia il tuo ordine" title="invia il tuo ordina "/></a>
