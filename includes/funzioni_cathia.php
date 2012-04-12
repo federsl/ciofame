@@ -18,7 +18,7 @@
 		$risposta = array ();
 		while ($ordine= mysql_fetch_array ($risultato, MYSQL_ASSOC))
 		{
-			$risposta[]= $ordine;		
+			$risposta[]= $id_ordine;		
 		}
 		return $risposta;	
 	}
@@ -39,8 +39,27 @@
 		$risposta = array ();
 		while ($ordine= mysql_fetch_array ($risultato, MYSQL_ASSOC))
 		{	
-			$risposta[]= $ordine;
+			$risposta[]= $id_ordine;
 		}
 		return $risposta;
 	}
+	
+	function aggiornaStatoCiboInOrdine($id_ordine, $id_cibo)
+	{
+		$query= "Update ordine_has_cibo SET stato= stato+1 WHERE ordine_id= $id_ordine AND cibo_id= $id_cibo";
+		mysql_query($query) or die ('Query fallita :'.$query);
+	}
 ?>
+
+
+
+
+
+
+
+
+
+
+
+
+

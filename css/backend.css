@@ -1,0 +1,54 @@
+#img_cucina{
+position:center;
+width:860px;
+height:200px;
+}
+
+#principale{
+width:865px; 
+text-align:center;
+height:154px;
+border:1px; 
+}
+
+#in_attesa{
+width:259px;
+text-align:center;
+}
+
+#in_preparazione{
+width:259px;
+text-align:center;
+}
+
+#pronto{
+width:259px;
+text-align:center;
+}
+
+#preparazione{
+float: left;
+width:259px;
+height:200px;
+border:1px solid #000000;
+}
+
+.fotopronto{
+border: 0px;
+text-align: center;
+width:250px;
+height:150px;
+position: center;
+
+}
+
+
+
+
+
+
+
+
+
+
+
