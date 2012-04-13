@@ -9,12 +9,12 @@
 	<div id="comanda">
 		<img class="comanda" src="images/notes.gif">
 			<div id="cibi_scelti">
-				<ul>
+				<dl>
 					<?php foreach ($_SESSION['ordine'] as $id => $quantita): ?>
 					  <?php $cibotemp = getCiboFromId($id); ?>
-					  <li><?php echo strtolower ($cibotemp['descrizione'].': '.$quantita) ?></li>
+					  <dt><?php echo strtolower ($cibotemp['descrizione'].': '.$quantita) ?></dt>
 					<?php endforeach; ?>
-				</ul>
+				</dl>
 			</div>
 	</div>
 	<div id="indietro">
