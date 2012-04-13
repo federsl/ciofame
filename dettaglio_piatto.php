@@ -8,9 +8,6 @@
 	<h5> € <?php echo $cibo ['costo']?></h5>
 	<form> 
 		<fieldset>
-			<select name="Quantità" >
-				<option value="ordina.php">1</option>
-			</select>		
 			<a href="index.php?action=scelta_piatto&method=add&id_cibo=<?php echo $cibo['id'] ?>"><img class="ordina" src="images/ordina.gif" alt="ordina" title="ordina"/></a>
 			<?php 
 				if (isset($_GET['method']))
