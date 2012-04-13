@@ -48,6 +48,15 @@
 	{
 		$query= "Update ordine_has_cibo SET stato= stato+1 WHERE ordine_id= $id_ordine AND cibo_id= $id_cibo";
 		mysql_query($query) or die ('Query fallita :'.$query);
+		
+		$query= "SELECT COUNT(*) FROM ordine_has_cibo WHERE stato < 3 AND ordine_id= $id_ordine";
+		$risultato = mysql_query ($query) or ('Query Fallita: '.$query);
+		$numero_piatti_da_fare_in_ordine = mysql_fetch_array($risultato);
+		
+		if($numero_piatti_da_fare_in_ordine[0] == 0) {
+			$query= "UPDATE ordine SET stato=1 WHERE id= $id_ordine";
+			mysql_query($query) or die ('Query fallita :'.$query);
+		}
 	}
 	
 ?>

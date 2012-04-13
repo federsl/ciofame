@@ -36,7 +36,7 @@
 						?>
 							<dt>
 								<a href="preparazionecucina.php?action=prontocucina&id_ordine=<?php echo $ordine['id']?>&id_cibo=<?php echo $cibo['id'];?>">
-									<img class="fotopronto"src="images/<?php echo $cibo['immagine']?>" width="100" height="80">
+									<img class="fotopronto"src="images/<?php echo $cibo['immagine']?>" width="100" height="80"><?php echo $cibo['descrizione']?>
 								</a>
 							</dt>
 						<?php } ?>
@@ -49,7 +49,7 @@
 						?>
 							<dt>
 								<a href="preparazionecucina.php?action=prontocucina&id_ordine=<?php echo $ordine['id']?>&id_cibo=<?php echo $cibo['id'];?>">
-									<img class="fotopronto" src="images/<?php echo $cibo['immagine']?>" width="100" height="80">
+									<img class="fotopronto" src="images/<?php echo $cibo['immagine']?>" width="100" height="80"><?php echo $cibo['descrizione']?>
 								</a>
 							</dt>
 						<?php } ?>
