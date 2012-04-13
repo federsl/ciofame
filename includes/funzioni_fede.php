@@ -35,7 +35,7 @@
 		return $cibo; 
 	}
 	function inserisciOrdine (){
-		$query = "insert into ordine (data,stato) values(now(),0)";
+		$query = "insert into ordine (data,stato, tavolo) values(now(),0, 1)";
 		mysql_query($query) or die('Query fallita:' . mysql_error());
 		$query ="SELECT MAX(id) as id FROM ordine";
 		$risultato = mysql_query($query) or die('Richiesta fallita' . $query);
