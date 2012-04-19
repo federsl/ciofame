@@ -1,5 +1,5 @@
 #scelta{
-width: 900px;  
+width: 896px;  
 height: 613px;
 background: url(../images/content.gif)no-repeat;
 margin: 0 auto; 
@@ -16,26 +16,24 @@ font: url(fonts/fruitopia.ttf) format("truetype");
 }
 a{
 color: #ffffff;
-text-decoration: none;
 }
 #lista{
 float: left; 
-width: 175px; 
-padding: 5px 5px 5px 5px; 
+width: 177px; 
+padding:0px 3px 0px 0px; 
 font-size:22px; 
 text-align: center;
 }
 #piatti { 
-position: absolute; left:400px; top: 20px; right:550px;
+position: absolute; left:400px; top: 30px; right:550px;
 margin: 0 px; 
 padding: 0px; 
-width:304 px;
-height:563 px;
+width:360 px;
 }
 h2{
 color: #3A040D;
-background: url(../images/button_up1.gif)no-repeat;width:200px; height: 40px;
-padding-top: 5px;
+background: url(../images/button_up1.gif)no-repeat;width:179px; height: 40px;
+padding-top: 1px;
 }
 h2:active{
 background: url(../images/button_down1.gif)no-repeat;
@@ -55,14 +53,9 @@ width: 294px;
 li{
 font-size: 22px;}
 #dettaglio{
-position:absolute; left: 757px; top: 20px; right:210px;
-height:750 px;
-width: 100 px;
-border: 1px solid #000000;
+position:absolute; left: 718px; top: 20px; right:210px;
+width: 360px;
 text-align: center;
-}
-#comanda_tav{
-position: absolute; left: 550px; bottom: 90px;
 }
 #tuo_ordine{
 width: 900px;  
@@ -97,7 +90,7 @@ position: absolute; bottom: 330px; left: 870px;
 position: absolute; bottom: 35px; left: 180px;
 }
 #comanda_tav{
-position: absolute; bottom: -8px; left: 570px;
+position: absolute; bottom: -8px; right:340px;
 }
 .ordina_comanda{
 width: 70px;
@@ -128,7 +121,7 @@ font-size: 20px;
 }
 .aggiunto{
 font-size: 26px;
-color: #3A040D;
+color: #FF0000;
 font-family: "Fruitopia";
 }
 #stato_ordine{
