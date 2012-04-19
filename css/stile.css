@@ -120,8 +120,9 @@ text-align:left;
 font-size: 20px;
 }
 .aggiunto{
+text-align: Center;
 font-size: 26px;
-color: #FF0000;
+color: #ff9900;
 font-family: "Fruitopia";
 }
 #stato_ordine{
